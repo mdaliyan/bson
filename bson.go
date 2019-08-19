@@ -35,7 +35,7 @@ func init() {
 }
 
 func NewID() string {
-	return newObjectID().Hex()
+	return NewObjectID().Hex()
 }
 
 // newObjectID generates a new ObjectID.
