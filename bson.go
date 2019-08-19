@@ -34,12 +34,12 @@ func init() {
 	}()
 }
 
-func New() string {
+func NewID() string {
 	return newObjectID().Hex()
 }
 
 // newObjectID generates a new ObjectID.
-func newObjectID() ObjectID {
+func NewObjectID() ObjectID {
 	return newObjectIDFromTimestamp(time.Now())
 }
 
